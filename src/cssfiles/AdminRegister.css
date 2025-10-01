@@ -1,0 +1,117 @@
+/* Page background
+#formContainer{
+  background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+ 
+  margin: 0;
+  padding: 0;
+} */
+
+/* Container */
+#formContainer {
+     font-family: "Poppins", sans-serif;
+  max-width: 420px;
+  margin: 70px auto;
+  padding: 35px 40px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Heading */
+#formContainer h2 {
+  text-align: center;
+  margin-bottom: 28px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #34495e;
+  letter-spacing: 1px;
+}
+
+/* Each input group */
+#content {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+#content label {
+  font-size: 15px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+/* Inputs */
+#content input {
+  padding: 12px 14px;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  background: #fafafa;
+}
+
+#content input:focus {
+  outline: none;
+  border-color: #6c63ff;
+  background: #fff;
+  box-shadow: 0 0 6px rgba(108, 99, 255, 0.4);
+}
+
+/* Buttons container */
+#buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+/* Submit button */
+#buttons .btn-success {
+  background: linear-gradient(135deg, #27ae60, #2ecc71);
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#buttons .btn-success:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 12px rgba(39, 174, 96, 0.3);
+}
+
+/* Back button */
+#buttons .btn-primary {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#buttons .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 12px rgba(52, 152, 219, 0.3);
+}

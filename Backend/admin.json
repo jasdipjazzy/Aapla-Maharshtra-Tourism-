@@ -1,0 +1,25 @@
+{
+  "admin": [
+    {
+      "id": "5b60",
+      "name": "akshay",
+      "email": "akshay@gmail.com",
+      "password": "satyam@123",
+      "contact": "123456"
+    },
+    {
+      "id": "5acf",
+      "name": "",
+      "email": "satyam@gmail.com",
+      "password": "satyam@123",
+      "contact": ""
+    },
+    {
+      "id": "3567",
+      "name": "mayur",
+      "email": "mayur@gmail.com",
+      "password": "mayur123",
+      "contact": "34567890"
+    }
+  ]
+}
