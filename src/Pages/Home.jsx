@@ -7,7 +7,6 @@ const Home = () => {
     <div className="home-container">
       <header className="home-hero">
         <div className="hero-video-background">
-          {/* Corrected video path */}
           <video autoPlay loop muted playsInline>
             <source src="/Aapla-Maharshtra-Tourism-/images/maharsthra.mp4" type="video/mp4" />
             Your browser does not support the video tag.
@@ -24,28 +23,8 @@ const Home = () => {
       
       <div className="marquee">
         <div className="marquee-content">
-          <span>Pune</span>
-          <span>•</span>
-          <span>Mumbai</span>
-          <span>•</span>
-          <span>Mahabaleshwar</span>
-          <span>•</span>
-          <span>Lonavala</span>
-          <span>•</span>
-          <span>Nashik</span>
-          <span>•</span>
-          <span>Aurangabad</span>
-          <span>•</span>
-          <span>Tarkarli</span>
-          <span>•</span>
-          <span>Kolhapur</span>
-          <span>Pune</span>
-          <span>•</span>
-          <span>Mumbai</span>
-          <span>•</span>
-          <span>Mahabaleshwar</span>
-          <span>•</span>
-          <span>Lonavala</span>
+          <span>Pune</span> <span>•</span> <span>Mumbai</span> <span>•</span> <span>Mahabaleshwar</span> <span>•</span> <span>Lonavala</span> <span>•</span> <span>Nashik</span> <span>•</span> <span>Aurangabad</span> <span>•</span> <span>Tarkarli</span> <span>•</span> <span>Kolhapur</span>
+          <span>Pune</span> <span>•</span> <span>Mumbai</span> <span>•</span> <span>Mahabaleshwar</span> <span>•</span> <span>Lonavala</span>
         </div>
       </div>
 
@@ -53,21 +32,18 @@ const Home = () => {
         <h2>Explore by Category</h2>
         <div className="category-cards">
           <Link to="/hillstation" className="category-card">
-            {/* Corrected image path */}
             <img src="/Aapla-Maharshtra-Tourism-/images/hill station.jpg" alt="Hill Stations" />
             <div className="card-overlay">
               <h3>Hill Stations</h3>
             </div>
           </Link>
           <Link to="/beaches" className="category-card">
-             {/* Corrected image path */}
             <img src="/Aapla-Maharshtra-Tourism-/images/sunrise-653199.jpg" alt="Beaches" />
             <div className="card-overlay">
               <h3>Beaches</h3>
             </div>
           </Link>
           <Link to="/temples" className="category-card">
-             {/* Corrected image path */}
             <img src="/Aapla-Maharshtra-Tourism-/images/temple-975324.jpg" alt="Temples" />
             <div className="card-overlay">
               <h3>Temples</h3>
@@ -79,7 +55,6 @@ const Home = () => {
       <section className="home-section featured-section">
         <div className="featured-content">
           <div className="featured-image">
-             {/* Corrected image path */}
             <img src="https://images.unsplash.com/photo-1605275519148-93680234a742?w=800&q=80" alt="Mahabaleshwar" />
           </div>
           <div className="featured-text">
@@ -91,3 +66,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+    </div>
+  );
+};
+
+export default Home;
