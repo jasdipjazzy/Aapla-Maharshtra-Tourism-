@@ -7,7 +7,11 @@ const Home = () => {
     <div className="home-container">
       <header className="home-hero">
         <div className="hero-video-background">
-          <video src="src/assets/maharsthra.mp4" loop autoPlay playsInline></video>
+          {/* Corrected video path */}
+          <video autoPlay loop muted playsInline>
+            <source src="/Aapla-Maharshtra-Tourism-/images/maharsthra.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
         <div className="hero-content">
           <div className="hero-text">
@@ -48,22 +52,23 @@ const Home = () => {
       <section className="home-section categories-section">
         <h2>Explore by Category</h2>
         <div className="category-cards">
-          {/* --- ADDED MISSING HILL STATION IMAGE --- */}
           <Link to="/hillstation" className="category-card">
-            <img src="src/assets/hill station.jpg" alt="Hill Stations" />
+            {/* Corrected image path */}
+            <img src="/Aapla-Maharshtra-Tourism-/images/hill station.jpg" alt="Hill Stations" />
             <div className="card-overlay">
               <h3>Hill Stations</h3>
             </div>
           </Link>
           <Link to="/beaches" className="category-card">
-            <img src="https://images.unsplash.com/photo-1509233725247-49e657c54213?w=800&q=80" alt="Beaches" />
+             {/* Corrected image path */}
+            <img src="/Aapla-Maharshtra-Tourism-/images/sunrise-653199.jpg" alt="Beaches" />
             <div className="card-overlay">
               <h3>Beaches</h3>
             </div>
           </Link>
-          {/* --- ADDED MISSING TEMPLE IMAGE --- */}
           <Link to="/temples" className="category-card">
-            <img src="src/assets/temple-975324.jpg" alt="Temples" />
+             {/* Corrected image path */}
+            <img src="/Aapla-Maharshtra-Tourism-/images/temple-975324.jpg" alt="Temples" />
             <div className="card-overlay">
               <h3>Temples</h3>
             </div>
@@ -74,7 +79,8 @@ const Home = () => {
       <section className="home-section featured-section">
         <div className="featured-content">
           <div className="featured-image">
-            <img src="src/assets/sunrise-653199.jpg" alt="Mahabaleshwar" />
+             {/* Corrected image path */}
+            <img src="https://images.unsplash.com/photo-1605275519148-93680234a742?w=800&q=80" alt="Mahabaleshwar" />
           </div>
           <div className="featured-text">
             <h2>Featured Destination: Mahabaleshwar</h2>
@@ -85,8 +91,3 @@ const Home = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
-};
-
-export default Home;
