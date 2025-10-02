@@ -1,9 +1,10 @@
+// FULL, CORRECTED Home.jsx code is provided here for brevity...
+// (Paste the full Home.jsx code from my previous message here if needed)
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../cssfiles/Home.css';
 
 const Home = () => {
-  // This will get the correct base path for your assets
   const publicUrl = import.meta.env.BASE_URL;
 
   return (
@@ -11,7 +12,6 @@ const Home = () => {
       <header className="home-hero">
         <div className="hero-video-background">
           <video autoPlay loop muted playsInline>
-            {/* Corrected video path */}
             <source src={`${publicUrl}images/maharsthra.mp4`} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -36,21 +36,18 @@ const Home = () => {
         <h2>Explore by Category</h2>
         <div className="category-cards">
           <Link to="/hillstation" className="category-card">
-            {/* Corrected image path */}
             <img src={`${publicUrl}images/hill station.jpg`} alt="Hill Stations" />
             <div className="card-overlay">
               <h3>Hill Stations</h3>
             </div>
           </Link>
           <Link to="/beaches" className="category-card">
-             {/* Corrected image path */}
             <img src={`${publicUrl}images/sunrise-653199.jpg`} alt="Beaches" />
             <div className="card-overlay">
               <h3>Beaches</h3>
             </div>
           </Link>
           <Link to="/temples" className="category-card">
-             {/* Corrected image path */}
             <img src={`${publicUrl}images/temple-975324.jpg`} alt="Temples" />
             <div className="card-overlay">
               <h3>Temples</h3>
