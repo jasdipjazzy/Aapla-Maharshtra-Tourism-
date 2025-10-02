@@ -3,12 +3,16 @@ import { Link } from 'react-router-dom';
 import '../cssfiles/Home.css';
 
 const Home = () => {
+  // This will get the correct base path for your assets
+  const publicUrl = import.meta.env.BASE_URL;
+
   return (
     <div className="home-container">
       <header className="home-hero">
         <div className="hero-video-background">
           <video autoPlay loop muted playsInline>
-            <source src="/Aapla-Maharshtra-Tourism-/images/maharsthra.mp4" type="video/mp4" />
+            {/* Corrected video path */}
+            <source src={`${publicUrl}images/maharsthra.mp4`} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -32,19 +36,22 @@ const Home = () => {
         <h2>Explore by Category</h2>
         <div className="category-cards">
           <Link to="/hillstation" className="category-card">
-            <img src="/Aapla-Maharshtra-Tourism-/images/hill station.jpg" alt="Hill Stations" />
+            {/* Corrected image path */}
+            <img src={`${publicUrl}images/hill station.jpg`} alt="Hill Stations" />
             <div className="card-overlay">
               <h3>Hill Stations</h3>
             </div>
           </Link>
           <Link to="/beaches" className="category-card">
-            <img src="/Aapla-Maharshtra-Tourism-/images/sunrise-653199.jpg" alt="Beaches" />
+             {/* Corrected image path */}
+            <img src={`${publicUrl}images/sunrise-653199.jpg`} alt="Beaches" />
             <div className="card-overlay">
               <h3>Beaches</h3>
             </div>
           </Link>
           <Link to="/temples" className="category-card">
-            <img src="/Aapla-Maharshtra-Tourism-/images/temple-975324.jpg" alt="Temples" />
+             {/* Corrected image path */}
+            <img src={`${publicUrl}images/temple-975324.jpg`} alt="Temples" />
             <div className="card-overlay">
               <h3>Temples</h3>
             </div>
